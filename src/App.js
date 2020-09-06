@@ -1,26 +1,36 @@
+/* eslint-disable */
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Navigation from './component/Header/Navigation';
+import CallToAction from './component/Action/Call-to-action';
+import About from './component/About/About';
+import Gallery from './component/Gallery/Gallery';
+import Testimonial from './component/Testimonial/Testimonial';
+import Contact from './component/Contact/Contact';
+
+import Section from './component/Section/Section';
+
+import Footer from './component/Footer/Footer';
+
+const App = () => {
+  return <React.Fragment>
+    <Navigation />
+    <CallToAction />
+    <Section title = "About">
+      <About />
+    </Section>
+    <Section title = "Gallery">
+      <Gallery />
+    </Section>
+    <Section title = "Testimonial">
+      <Testimonial />
+    </Section>
+    <Section title = "Contact">
+      <Contact />
+    </Section>
+    <Footer />
+  </React.Fragment>
 }
+
 
 export default App;
