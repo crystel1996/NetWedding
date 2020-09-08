@@ -1,0 +1,24 @@
+@import '_reset.scss';
+@import '_variable.scss';
+@import '_global.scss';
+@import '_extends.scss';
+
+.navigation{
+    @extend %flex-row-sb;
+    padding:25px $section-padding-ltr;
+    background:rgba(0,0,0,0.5);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    border-bottom:1px solid $color-theme;
+    & .navigation-logo{
+        font-weight:bold;
+    }
+    & .navigation-menu{
+        & ul li {
+            padding: 0 10px;
+        }
+    }
+}

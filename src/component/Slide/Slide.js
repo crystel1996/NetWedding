@@ -1,31 +1,26 @@
 /* eslint-disable */
+
 import React from 'react';
 
-import {BannerAction} from './../../data/data';
-
-const Slide = ({picture,caption,text,action}) => {
-    return <div className="slide fade"> 
-        <img src={picture} style={{widt:"100%"}}  alt="Image" />
+const Slide = ({content}) => {
+    
+    let style = {
+        height:'100%',
+        width:'100%',
+        backgroundSize:'cover',
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundImage:'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('+require('./../../images/'+content.picture)+')',
+        position:'relative'
+    };
+    
+    return <div className="slide fade" style={{...style}}>
         <div className="slide-caption">
-            <h1>{caption}</h1>
-            <p>{text}</p>
-            <button className="btn btn-theme">{action}</button>
+            <h1>{content.caption}</h1>
+            <p>{content.text}</p>
+            <button>{content.action}</button>
         </div>
     </div>
 }
 
-const SlideCallAction = () => {
-    let item = [];
-    BannerAction.forEach(element => {
-        item.push(<Slide 
-            picture={require("./../../images/"+element.picture)} 
-            key={element.key} 
-            caption={element.caption} text={element.text} action={element.action} />)
-    });
-
-    return <div className="slideshow-container">
-        {item}    
-    </div>
-}
-
-export {SlideCallAction};
+export default Slide;

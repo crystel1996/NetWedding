@@ -7,7 +7,7 @@ const Menu = ({items}) => {
 
     items.forEach(element => {
         item.push(<li key={element.link}>
-            <a href={element.link}>{element.text}</a>
+            <a href={element.link} >{element.text}</a>
         </li>)
     });
 

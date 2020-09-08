@@ -1,11 +1,12 @@
 /* eslint-disable */
 import React from 'react';
 
-import {SlideCallAction} from './../Slide/Slide';
+import {Slider} from './../Slide/Slider';
+import { BannerAction } from '../../data/data';
 
 const CallToAction = () => {
     return <div className="call-to-action">
-        <SlideCallAction />
+        <Slider slides={BannerAction} autoplay={3} />
     </div>
 }
 
