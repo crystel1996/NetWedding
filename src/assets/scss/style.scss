@@ -22,3 +22,28 @@
         }
     }
 }
+
+section{
+    @extend %section;
+    & .about-content{
+        padding:25px 0;
+        @extend %flex-row-fs;
+        & .about-item {
+            & img {
+                padding-right:25px;
+                width:100%;
+                height:auto;
+            }
+            &:last-child{
+                @extend %flex-column-center;
+            }
+            & .about-item-content{
+                padding:25px 0;
+                & h3{
+                    @extend %color-link-linear-theme;
+                    font-size:1.5em;
+                }
+            }
+        }
+    }
+}

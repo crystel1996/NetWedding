@@ -63,7 +63,7 @@
         }
     }
     &.theme-bg{
-        background:$color-theme;
+        background:$background;
         & .section-title h2{
             color:white;
         }
@@ -82,10 +82,18 @@
         & h2{
             font-size:3em;
             padding:25px 0;
+            color:$color-theme;
         }
 
         & p{
             opacity:0.7;
         }
     }
+}
+
+%color-link-linear-theme{
+    color:$color-theme;
+    background:$background;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
 }

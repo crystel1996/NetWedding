@@ -41,4 +41,22 @@ const BannerAction = [
     },
 ];
 
-export {MENU,BannerAction};
+const ABOUT = [
+    {
+        key:"1",
+        title:"Lorem ipsum dolor sit amet consecatur",
+        content:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ex odio voluptas veniam saepe quae."
+    },
+    {
+        key:"2",
+        title:"Lorem ipsum dolor sit amet consecatur",
+        content:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ex odio voluptas veniam saepe quae."
+    },
+    {
+        key:"3",
+        title:"Lorem ipsum dolor sit amet consecatur",
+        content:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat ex odio voluptas veniam saepe quae."
+    }
+];
+
+export {MENU,BannerAction,ABOUT};

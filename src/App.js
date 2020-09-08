@@ -16,16 +16,16 @@ const App = () => {
   return <React.Fragment>
     <Navigation />
     <CallToAction />
-    <Section title = "About">
+    <Section title = "About" className="dark-bg">
       <About />
     </Section>
-    <Section title = "Gallery">
+    <Section title = "Gallery" className="white-bg">
       <Gallery />
     </Section>
-    <Section title = "Testimonial">
+    <Section title = "Testimonial" className="theme-bg">
       <Testimonial />
     </Section>
-    <Section title = "Contact">
+    <Section title = "Contact" className="white-bg">
       <Contact />
     </Section>
     <Footer />
