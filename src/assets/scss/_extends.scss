@@ -13,6 +13,11 @@
     justify-content:center;
 }
 
+%flex-column-sb{
+    @extend %flex-column;
+    justify-content:space-between;
+}
+
 %flex-row-sb{
     @extend %flex-row;
     justify-content:space-between;

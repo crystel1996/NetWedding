@@ -4,7 +4,7 @@ import React from 'react';
 import Navigation from './component/Header/Navigation';
 import CallToAction from './component/Action/Call-to-action';
 import About from './component/About/About';
-import Gallery from './component/Gallery/Gallery';
+import Galleries from './component/Gallery/Gallery';
 import Testimonial from './component/Testimonial/Testimonial';
 import Contact from './component/Contact/Contact';
 
@@ -20,7 +20,7 @@ const App = () => {
       <About />
     </Section>
     <Section title = "Gallery" className="white-bg">
-      <Gallery />
+      <Galleries />
     </Section>
     <Section title = "Testimonial" className="theme-bg">
       <Testimonial />

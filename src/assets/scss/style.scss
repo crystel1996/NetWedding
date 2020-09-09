@@ -6,7 +6,7 @@
 .navigation{
     @extend %flex-row-sb;
     padding:25px $section-padding-ltr;
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.7);
     position:fixed;
     top:0;
     left:0;
@@ -43,6 +43,20 @@ section{
                     @extend %color-link-linear-theme;
                     font-size:1.5em;
                 }
+            }
+        }
+    }
+    & .gallery-content {
+        display:flex;
+        @extend %flex-wrap;
+        padding:25px 4px;
+        & .gallery-item{
+            flex:25%;
+            max-width: 50%;
+            padding:0 4px;
+            & img {
+                margin-top:8px;
+                vertical-align: middle;
             }
         }
     }
