@@ -4,8 +4,8 @@ import React from 'react';
 
 import {GALLERY} from './../../data/data';
 
-const GalleryItem = ({content,ref}) => {
-        return <img alt={content.alt} ref={ref} src={content.src} />
+const GalleryItem = ({content}) => {
+        return <img alt={content.alt} src={require("./../../images/"+content.src)} />
 };
 
 
