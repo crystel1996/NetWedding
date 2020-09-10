@@ -3,8 +3,9 @@
 import React from 'react';
 
 const Footer = () => {
+    let date = new Date().getFullYear() == "2020" ? '' : ' - '+new Date().getFullYear();
     return <footer>
-        Footer content
+        <p>Copyright 2020 {date} - Harimanana Ratsimbazafy. Tous droits résérvés.</p>    
     </footer>
 }
 

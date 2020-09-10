@@ -91,4 +91,34 @@ section{
             }
         }
     }
+    & .contact-content{
+        @extend %flex-row-sb;
+        @extend %flex-wrap;
+        padding:25px 0;
+        & .contact-item{
+            width:50%;
+            & .list-contact{
+                padding:10px 0;
+                & a{
+                    padding:0 5px;
+                }
+            }
+            & h4 {
+                font-weight:bold;
+                font-size:1.2em;
+            }
+            & form{
+                & input, & textarea, & button{
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:$section-padding-ltr 0;
 }

@@ -164,10 +164,48 @@ const TESTIMONIAL = [
     },
 ];
 
+const CONTACT = [
+    {
+        key:"1",
+        icon:"fas fa-envelope",
+        title:"example@domaine.com",
+        link:"mailto:example@domaine.com"
+    },
+    {
+        key:"2",
+        icon:"fas fa-phone",
+        title:"+261 32 73 074 49",
+        link:"tel:+261327307449"
+    }
+];
+
+const SOCIAL_NETWORK = [
+    {
+        key:"1",
+        icon:"fab fa-facebook",
+        title:"Facebook/NetWedding",
+        link:"https://www.facebook.com"
+    },
+    {
+        key:"2",
+        icon:"fab fa-twitter",
+        title:"Twitter/NetWedding",
+        link:"https://www.twitter.com"
+    },
+    {
+        key:"3",
+        icon:"fab fa-instagram",
+        title:"Instagram/NetWedding",
+        link:"https://www.instagram.com"
+    }
+];
+
 export {
     MENU,
     BannerAction,
     ABOUT,
     GALLERY,
-    TESTIMONIAL
+    TESTIMONIAL,
+    CONTACT,
+    SOCIAL_NETWORK
 };
