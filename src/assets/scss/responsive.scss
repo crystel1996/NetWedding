@@ -1,0 +1,44 @@
+@media all and (max-width:992px){
+    .navigation{
+        & .navigation-toggle{
+            display:block
+        }
+        & .nav-collapse{
+            display:none;
+        }
+        & .navigation-dropdown-content{
+            height:100%;
+            width:0;
+            position:fixed;
+            z-index:10;
+            left:0;
+            top:0;
+            background-color:rgba(0,0,0,1);
+            overflow:hidden;
+            transition: 0.5s;
+            & .nav-dropdown-close{
+                display:block;
+                font-size:1.5em;
+                color:white;
+                position:absolute;
+                top:0;
+                right:25px;
+            }
+            & .navigation-menu{
+                position:relative;
+                top:25%;
+                width:100%;
+                text-align:center;
+                margin-top:25px;
+                & ul li{
+                    display:inherit;
+                    padding:15px 0 !important;
+                    & a{
+                        text-align:center;
+                        font-size:1.8em;
+                    }
+                }
+            }
+        }
+    }
+}
