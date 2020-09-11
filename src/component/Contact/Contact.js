@@ -28,15 +28,19 @@ const Contact = () => {
         )
     });
 
+    const handleSubmit = (value) => {
+        console.log(value);
+    }
+
     return <div className="contact-content">
         <div className="contact-item">
             <h4>Contacts</h4>
             {contact}
-            <h4>Réseaux sociaux</h4>
+            <h4>Social networks</h4>
             {network}
         </div>
         <div className="contact-item">
-            <FormContact>
+            <FormContact onSubmit={handleSubmit} defaultValue={{title:"",email:"",message:""}} describe="Formulaire de contact">
                 <InputField type="text" name="title" value="Sujet" />
                 <InputField type="email" name="email" value="Email" />
                 <TextareaField name="message" value="Message" />

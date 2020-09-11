@@ -119,6 +119,10 @@ section{
                 font-size:1.2em;
             }
             & form{
+                & .form-description{
+                    text-decoration: underline;
+                    font-size:1.2em;
+                }
                 & input, & textarea, & button{
                     width:100%;
                 }
