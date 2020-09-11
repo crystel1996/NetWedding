@@ -2,6 +2,7 @@
 @import '_variable.scss';
 @import '_global.scss';
 @import '_extends.scss';
+@import 'animate.scss';
 
 .navigation{
     @extend %flex-row-sb;
