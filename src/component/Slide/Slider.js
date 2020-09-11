@@ -7,9 +7,10 @@ import SliderContent from './SlideContent';
 import Slide from './Slide';
 import Arrow from './Arrow';
 import Dots from './Dots';
+import useResize from '../../hook/useResize';
 
 const Slider = ({slides,autoplay}) => {
-    const getWidth = () => window.innerWidth;
+    const getWidth = useResize(window.innerWidth);
 
     const autoPlayRef = useRef();
 
@@ -38,7 +39,7 @@ const Slider = ({slides,autoplay}) => {
         setState({
             ...state,
             activeIndex: activeIndex + 1,
-            translate: (activeIndex + 1) * getWidth()
+            translate: (activeIndex + 1) * getWidth
         })
     }
 
@@ -50,7 +51,7 @@ const Slider = ({slides,autoplay}) => {
         if(activeIndex === 0) {
             return setState({
                 ...state,
-                translate: (slides.length - 1) * getWidth(),
+                translate: (slides.length - 1) * getWidth,
                 activeIndex: slides.length - 1
             })
         }
@@ -58,7 +59,7 @@ const Slider = ({slides,autoplay}) => {
         setState({
             ...state,
             activeIndex: activeIndex - 1,
-            translate: (activeIndex - 1) * getWidth()
+            translate: (activeIndex - 1) * getWidth
         })
     }
 
@@ -80,7 +81,7 @@ const Slider = ({slides,autoplay}) => {
     });
 
     return <div className="slideshow-container">
-        <SliderContent translate={translate} transition={transition} width={getWidth() * slides.length}>
+        <SliderContent translate={translate} transition={transition} width={getWidth * slides.length}>
             {item}
         </SliderContent>
         <Arrow direction="left" handleClick={prevSlide} />

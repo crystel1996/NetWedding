@@ -72,7 +72,7 @@ section{
         }
     }
     & .testimonial-content{
-        @extend %flex-row-center;
+        @extend %flex-row-sb;
         @extend %flex-wrap;
         padding:25px 0;
         & .testimonial-item{

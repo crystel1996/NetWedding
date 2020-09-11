@@ -41,4 +41,73 @@
             }
         }
     }
+
+    section{
+        & .about-content{
+            flex-direction:column;
+            & .about-item{
+                & img {
+                    padding-right:0px;
+                }
+            }
+        }
+        & .testimonial-content{
+            & .testimonial-item{
+                max-width:100%;
+                margin-top:25px;
+                margin-left:0;
+            }
+        }
+    }
+}
+
+@media all and (max-width:600px) {
+    .navigation{
+        padding:15px;
+    }
+    .slideshow-container{
+        & .slide-content{
+            & .slide{
+                & .slide-caption{
+                    text-align:left;
+                    left:15px;
+                    top:30%;
+                    padding:0 5px;
+                    transform:translate(0px,-50px);
+                    & h1{
+                        font-size:2em;
+                    }
+                    & p{
+                        font-size:1.1em;
+                    }
+                }
+            }
+        }
+        & .prev, & .next{
+            display:none;
+        }
+        & .dot-slide{
+            left:15px;
+        }
+    }
+    section{
+        padding:15px;
+        & .section-title{
+            & h2{
+                font-size:2em;
+            }
+        }
+        & .gallery-content{
+            & .gallery-item{
+                flex:100%;
+                max-width:100%;
+            }
+        }
+        & .contact-content{
+            flex-direction:column;
+            & .contact-item{
+                width:100%;
+            }
+        }
+    }
 }
