@@ -146,6 +146,11 @@ form{
     animation-duration:1s;
 }
 
+.translate-top{
+    animation-name:translate-top;
+    animation-duration:1s;
+}
+
 @each $brand,$color in $brands-color{
     .fa-#{$brand} {
         color:$color;

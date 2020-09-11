@@ -1,11 +1,33 @@
 /* eslint-disable */
 
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 
 import {GALLERY} from './../../data/data';
+import { Translate } from '../../Function/Translate';
 
 const GalleryItem = ({content}) => {
-        return <img alt={content.alt} src={require("./../../images/"+content.src)} />
+    const galleryPictureRef = useRef(null);
+
+    useLayoutEffect(() => {
+        let picture = galleryPictureRef.current;
+        picture.dataset.translate = "false";
+        
+        const onTranslateTop = () => {
+            if(picture.dataset.translate == "false") {
+                picture.style.opacity = 0;
+            }
+
+            Translate(picture,picture,'top');
+        }
+        window.addEventListener("scroll",onTranslateTop);
+
+        return () => {
+            window.removeEventListener("scroll",onTranslateTop);
+        }
+        
+    },[]);
+
+    return <img alt={content.alt} className="" src={require("./../../images/"+content.src)} ref={galleryPictureRef} />
 };
 
 
@@ -14,7 +36,7 @@ const Galleries = () => {
     let items = [];
     let ratio = parseInt(GALLERY.length / 2);
     let i = 1;
-    
+
     GALLERY.forEach(el => {
         item.push(<GalleryItem key={el.key} content={el} />)
         
