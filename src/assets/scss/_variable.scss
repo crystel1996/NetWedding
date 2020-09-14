@@ -1,13 +1,14 @@
+/*--------------------COLOR-THEME FOR THIS WEBSITE-------------------------------------------------------*/
 $color-theme: #eb3349;
-
 $background:linear-gradient(#eb3349,#f45c43);
-
 $background-hover:darken($color-theme,10);
 
+/*-----------------------LIST OF FLEX ALIGN CONTENT AND ALIGN ITEMS----------------------------------------*/
 $align-content: flex-start,flex-end,center,space-between,stretch,space-around;
-
 $align-items: flex-start, flex-end,center,stretch,baseline;
 
+/*--------------------------PADDING SECTION'S VALUE-----------------------------------------------------*/
 $section-padding-ltr: 50px;
 
+/*------------------------------------------------LIST OF BRANDS WITH HIS COLOR--------------------------*/
 $brands-color:'facebook' #3B5998,'twitter' #55ACEE, 'instagram' #3F729B, 'envelope' #FFBB00, 'phone' #7CBB00;

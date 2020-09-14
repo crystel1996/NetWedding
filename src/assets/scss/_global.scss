@@ -1,3 +1,4 @@
+/*--------------------------------------PROPERTY VALUE HTML--------------------------------------------------------------------*/
 html,body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:16px;
@@ -53,6 +54,8 @@ form{
         background:none;
     }
 }
+
+/*------------------------------------------------PROPERTY VALUE FOR SLIDESHOW IN CALL TO ACTION ---------------------------------------*/
 
 .slideshow-container{
     width:100%;
@@ -130,6 +133,9 @@ form{
     }
 }
 
+/*------------------------------------------------LIST PROPERTY FOR ANIMATION----------------------------------------------------------
+----------------------------------------------------MORE INFORMATION IN ANIMATE.SCSS-------------------------------------------------------- 
+*/
 .fade{
     animation-name: fade;
     animation-duration:1.5s;
@@ -151,6 +157,9 @@ form{
     animation-duration:1s;
 }
 
+/*
+----------------------------------------------------GENERATE BRAND'S COLOR LIKE FACEBOOK, INSTAGRAM----------------------------------------------------------------
+*/
 @each $brand,$color in $brands-color{
     .fa-#{$brand} {
         color:$color;

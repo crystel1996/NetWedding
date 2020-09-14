@@ -1,3 +1,4 @@
+/*-----------------DEFINE FLEX BASIC PROPERTY-----------------------------------*/
 %flex-row{
     display:flex;
     flex-direction:row;
@@ -52,6 +53,11 @@
     flex-wrap:wrap;
 }
 
+/*-----------------------------------------GENERATE FLEX ALIGN------------------------------------
+    -------------- align-items: center ... align-content: space-between ... etc -----------------
+    --------------- See property value in _variable.scss---------------------------------------
+*/
+
 @each $align in $align-content{
     %align-content-#{$align}{
         align-content: $align;
@@ -63,6 +69,10 @@
         align-items:$align;
     }
 }
+
+/*
+-------------------------------------------------DEFINE SECTION PROPERTY DEFAULT ----------------------------------
+*/
 
 %section{
     padding:$section-padding-ltr;
@@ -100,6 +110,10 @@
         }
     }
 }
+
+/*
+-------------------------------------------------------DEFINE LINK'S COLOR---------------------------------------------------
+*/
 
 %color-link-linear-theme{
     color:$color-theme;

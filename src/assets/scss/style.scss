@@ -1,9 +1,12 @@
+/*-----------------------------------------------IMPORT ALL FILES WE NEED IN STYLE.SCSS--------------------------------------------------*/
 @import '_reset.scss';
 @import '_variable.scss';
 @import '_global.scss';
 @import '_extends.scss';
 @import 'animate.scss';
 
+
+/*-------------------------------------------------PROPERTY FOR NAVIGATION BLOCKS---------------------------------------------------------*/
 .navigation{
     @extend %flex-row-sb;
     padding:25px $section-padding-ltr;
@@ -35,6 +38,7 @@
     }
 }
 
+/*-------------------------------------------------PROPERTY FOR ALL SECTION: ABOUT, GALLERY, TESTIMONIAL, CONTACT-------------------------*/
 section{
     @extend %section;
     & .about-content{
@@ -132,6 +136,7 @@ section{
     }
 }
 
+/*-------------------------------------------------PROPERTY FOR ALL FOOTER----------------------------------------------------------------*/
 footer{
     background:black;
     color:white;
@@ -139,4 +144,5 @@ footer{
     padding:$section-padding-ltr 0;
 }
 
+/*---------------------------------------------------------IMPORT RESPONSIVE IN STYLE.SCSS------------------------------------------------*/
 @import 'responsive.scss';

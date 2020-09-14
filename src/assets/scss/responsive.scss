@@ -1,3 +1,6 @@
+/*
+------------------------MAKE WEBSITE RESPONSIVE FOR DEVICE WITH MAXIMUM WIDTH: 992px-------------------------------------
+*/
 @media all and (max-width:992px){
     .navigation{
         & .navigation-toggle{
@@ -61,6 +64,9 @@
     }
 }
 
+/*
+------------------------MAKE WEBSITE RESPONSIVE FOR DEVICE WITH MAXIMUM WIDTH: 600px---------------------------------------
+*/
 @media all and (max-width:600px) {
     .navigation{
         padding:15px;
