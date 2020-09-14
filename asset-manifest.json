@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/NetWedding/static/css/main.03954fc8.chunk.css",
+    "main.js": "/NetWedding/static/js/main.1937b6d9.chunk.js",
+    "main.js.map": "/NetWedding/static/js/main.1937b6d9.chunk.js.map",
+    "runtime-main.js": "/NetWedding/static/js/runtime-main.dcff0cc8.js",
+    "runtime-main.js.map": "/NetWedding/static/js/runtime-main.dcff0cc8.js.map",
+    "static/css/2.3936cf85.chunk.css": "/NetWedding/static/css/2.3936cf85.chunk.css",
+    "static/js/2.23b7d881.chunk.js": "/NetWedding/static/js/2.23b7d881.chunk.js",
+    "static/js/2.23b7d881.chunk.js.map": "/NetWedding/static/js/2.23b7d881.chunk.js.map",
+    "index.html": "/NetWedding/index.html",
+    "precache-manifest.4bcf0ddd7d65a757b762d30efd04a867.js": "/NetWedding/precache-manifest.4bcf0ddd7d65a757b762d30efd04a867.js",
+    "service-worker.js": "/NetWedding/service-worker.js",
+    "static/css/2.3936cf85.chunk.css.map": "/NetWedding/static/css/2.3936cf85.chunk.css.map",
+    "static/css/main.03954fc8.chunk.css.map": "/NetWedding/static/css/main.03954fc8.chunk.css.map",
+    "static/js/2.23b7d881.chunk.js.LICENSE.txt": "/NetWedding/static/js/2.23b7d881.chunk.js.LICENSE.txt",
+    "static/media/author-2.jpg": "/NetWedding/static/media/author-2.c7edddd7.jpg",
+    "static/media/author.jpg": "/NetWedding/static/media/author.4d141acc.jpg",
+    "static/media/banner1.jpg": "/NetWedding/static/media/banner1.4c013e2f.jpg",
+    "static/media/banner2.jpg": "/NetWedding/static/media/banner2.b9ced7c9.jpg",
+    "static/media/banner3.jpg": "/NetWedding/static/media/banner3.a4c46f70.jpg",
+    "static/media/customer_1.jpg": "/NetWedding/static/media/customer_1.2cd3dcd3.jpg",
+    "static/media/customer_2.jpg": "/NetWedding/static/media/customer_2.514eee1b.jpg",
+    "static/media/customer_3.jpg": "/NetWedding/static/media/customer_3.cfb95125.jpg",
+    "static/media/all.min.css": "/NetWedding/static/media/fa-solid-900.ee09ad75.woff",
+    "static/media/gallery_1.jpg": "/NetWedding/static/media/gallery_1.92d56f58.jpg",
+    "static/media/gallery_2.jpg": "/NetWedding/static/media/gallery_2.c0e0a5df.jpg",
+    "static/media/gallery_3.jpg": "/NetWedding/static/media/gallery_3.6efc24f7.jpg",
+    "static/media/gallery_4.jpg": "/NetWedding/static/media/gallery_4.19494ce8.jpg",
+    "static/media/gallery_5.jpg": "/NetWedding/static/media/gallery_5.dd639e4f.jpg",
+    "static/media/gallery_6.jpg": "/NetWedding/static/media/gallery_6.3814d735.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dcff0cc8.js",
+    "static/css/2.3936cf85.chunk.css",
+    "static/js/2.23b7d881.chunk.js",
+    "static/css/main.03954fc8.chunk.css",
+    "static/js/main.1937b6d9.chunk.js"
+  ]
+}
