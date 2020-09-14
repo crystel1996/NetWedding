@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/NetWedding/precache-manifest.4bcf0ddd7d65a757b762d30efd04a867.js"
+  "/NetWedding/precache-manifest.54a8980826f029e21a2e2c7d25e7abdf.js"
 );
 
 self.addEventListener('message', (event) => {
