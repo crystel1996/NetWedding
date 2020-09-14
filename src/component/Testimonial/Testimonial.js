@@ -5,7 +5,7 @@ import React, { useRef, useLayoutEffect } from 'react';
 import {TESTIMONIAL} from './../../data/data';
 import { Translate } from '../../Function/Translate';
 
-const TestimonialItem = ({content}) => {
+const TestimonialItem = ({content,translate}) => {
     
     const testimonialTextRef = useRef(null);
     
@@ -13,7 +13,7 @@ const TestimonialItem = ({content}) => {
         let text = testimonialTextRef.current;
         let parent = text.parentElement;
         
-        text.dataset.translate = "false";
+        text.dataset.translate = translate;
 
         const onTranslateTop = () => {
             if(text.dataset.translate == "false") {
@@ -37,11 +37,11 @@ const TestimonialItem = ({content}) => {
     </div> 
 }
 
-const Testimonial = () => {
+const Testimonial = ({translate}) => {
     let item = [];
 
     TESTIMONIAL.forEach(element => {
-        item.push(<TestimonialItem key={element.key} content={element} />)
+        item.push(<TestimonialItem key={element.key} content={element} translate={translate} />)
     });
 
     return <div className="testimonial-content">

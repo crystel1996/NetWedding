@@ -5,14 +5,14 @@ import React, { useRef, useLayoutEffect } from 'react';
 import {ABOUT} from './../../data/data';
 import { Translate } from '../../Function/Translate';
 
-const AboutItem = ({title,content}) => {
+const AboutItem = ({title,content,translate}) => {
 
     const aboutRef = useRef(null);
 
     useLayoutEffect(() => {
         let item = aboutRef.current;
         let parent = item.parentElement;
-        item.dataset.translate = "false";
+        item.dataset.translate = translate;
         
         const onTranslateLeft = () => {
             if(item.dataset.translate === "false") {
@@ -34,14 +34,14 @@ const AboutItem = ({title,content}) => {
     </div>
 } 
 
-const About = () => {
+const About = ({translate}) => {
     let item = [];
     const aboutPictureRef = useRef(null);
 
     useLayoutEffect(() => {
         let picture = aboutPictureRef.current;
         let parent = picture.parentElement;
-        picture.dataset.translate = "false";
+        picture.dataset.translate = translate;
 
         const onTranslateRight = () => {
             if(picture.dataset.translate === "false") {
@@ -59,7 +59,7 @@ const About = () => {
     },[]);
 
     ABOUT.forEach(element => {
-        item.push(<AboutItem key={element.key} title={element.title} content={element.content} />)
+        item.push(<AboutItem key={element.key} title={element.title} content={element.content} translate={translate} />)
     });
 
     return <div className="about-content">

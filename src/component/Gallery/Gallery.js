@@ -5,12 +5,12 @@ import React, { useLayoutEffect, useRef } from 'react';
 import {GALLERY} from './../../data/data';
 import { Translate } from '../../Function/Translate';
 
-const GalleryItem = ({content}) => {
+const GalleryItem = ({content,translate}) => {
     const galleryPictureRef = useRef(null);
 
     useLayoutEffect(() => {
         let picture = galleryPictureRef.current;
-        picture.dataset.translate = "false";
+        picture.dataset.translate = translate;
         
         const onTranslateTop = () => {
             if(picture.dataset.translate == "false") {
@@ -31,14 +31,14 @@ const GalleryItem = ({content}) => {
 };
 
 
-const Galleries = () => {
+const Gallery = ({translate}) => {
     let item = [];
     let items = [];
     let ratio = parseInt(GALLERY.length / 2);
     let i = 1;
 
     GALLERY.forEach(el => {
-        item.push(<GalleryItem key={el.key} content={el} />)
+        item.push(<GalleryItem key={el.key} content={el} translate={translate} />)
         
         if(i % ratio == 0 ) {
             items.push(<div className="gallery-item" key={i}>{item}</div>);
@@ -56,4 +56,4 @@ const Galleries = () => {
     </div> 
 }
 
-export default Galleries;
+export default Gallery;

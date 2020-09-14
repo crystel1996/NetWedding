@@ -6,7 +6,7 @@ import { FormContact, InputField, ButtonField, TextareaField} from './FormContac
 import animeTypography from '../../Function/anime';
 import { Translate } from '../../Function/Translate';
 
-const ContactItem = ({items}) => {
+const ContactItem = ({items,translate}) => {
 
     const contactLinkRef = useRef(null);
 
@@ -14,7 +14,7 @@ const ContactItem = ({items}) => {
         let text = contactLinkRef.current;
         let parent = text.parentElement.parentElement;
         text.innerHTML = text.textContent.replace(/\S/g,"<span class='letter'>$&</span>");
-        text.dataset.anime = "false";
+        text.dataset.anime = translate;
 
 
         const onAnime = () => {
@@ -38,7 +38,7 @@ const ContactItem = ({items}) => {
     </div> 
 }
 
-const Contact = () => {
+const Contact = ({translate}) => {
     let contact = [];
     let network = []
 
@@ -46,13 +46,13 @@ const Contact = () => {
 
     CONTACT.forEach(element => {
         contact.push(
-            <ContactItem items={element} key={element.key} />
+            <ContactItem items={element} key={element.key} translate={translate} />
         )
     });
 
     SOCIAL_NETWORK.forEach(element => {
         network.push(
-            <ContactItem items={element} key={element.key} />
+            <ContactItem items={element} key={element.key} translate={translate} />
         )
     });
 
@@ -60,7 +60,7 @@ const Contact = () => {
         let form = formRef.current;
         let parent = form.parentElement;
 
-        form.dataset.translate = "false";
+        form.dataset.translate = translate;
 
         const onTranslate = () => {
             if(form.dataset.translate == "false") {

@@ -2,6 +2,7 @@
 import React from 'react';
 
 import useResize from './../../hook/useResize';
+import { Link } from 'react-router-dom';
 
 const Menu = ({items,isCollapsed,collapse}) => {
     const width = useResize(window.innerWidth);
@@ -11,7 +12,7 @@ const Menu = ({items,isCollapsed,collapse}) => {
 
     items.forEach(element => {
         item.push(<li key={element.link}>
-            <a href={element.link} onClick={collapse} >{element.text}</a>
+            <Link to={element.link} onClick={collapse} >{element.text}</Link>
         </li>)
     });
 

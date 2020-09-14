@@ -15,6 +15,10 @@ const MENU = [
     {
         text:"Contact",
         link:"/contact"
+    },
+    {
+        text:"Testimonial",
+        link:"/testimonial"
     }
 ];
 
