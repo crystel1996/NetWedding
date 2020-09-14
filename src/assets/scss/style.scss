@@ -134,6 +134,15 @@ section{
             }
         }
     }
+    & .notFound-content{
+        @extend %flex-row-center;
+        padding:$section-padding-ltr;
+        min-height:100vh;
+        & img {
+            max-width:auto;
+            max-height:280px;
+        }
+    }
 }
 
 /*-------------------------------------------------PROPERTY FOR ALL FOOTER----------------------------------------------------------------*/

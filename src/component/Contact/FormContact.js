@@ -18,7 +18,7 @@ const FormContact = ({children,defaultValue,onSubmit,describe}) => {
 
     const handleSubmit = useCallback((e) => {
         e.preventDefault();
-        onSubmit(value);
+        onSubmit(value,setData);
 
     },[onSubmit,value]);
 

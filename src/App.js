@@ -7,6 +7,7 @@ import About from './component/About/About';
 import Gallery from './component/Gallery/Gallery';
 import Testimonial from './component/Testimonial/Testimonial';
 import Contact from './component/Contact/Contact';
+import NotFound from './component/Error/NotFound';
 
 import Section from './component/Section/Section';
 
@@ -23,7 +24,7 @@ const App = () => {
   return <React.Fragment>
     <Router>
         <Navigation />  
-
+        
         <Switch>
           <Route exact path="/">
             <Home />
@@ -46,6 +47,11 @@ const App = () => {
           <Route path="/contact">
             <Section title = "Contact" className="white-bg">
               <Contact translate="true" />
+            </Section>
+          </Route>
+          <Route path="*">
+            <Section title="Page introuvable" className="dark-bg">
+              <NotFound />
             </Section>
           </Route>
         </Switch>

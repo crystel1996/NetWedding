@@ -7,10 +7,10 @@ import { Translate } from '../../Function/Translate';
 
 const TestimonialItem = ({content,translate}) => {
     
-    const testimonialTextRef = useRef(null);
+    const testimonialRef = useRef(null);
     
     useLayoutEffect(() => {
-        let text = testimonialTextRef.current;
+        let text = testimonialRef.current;
         let parent = text.parentElement;
         
         text.dataset.translate = translate;
@@ -19,7 +19,7 @@ const TestimonialItem = ({content,translate}) => {
             if(text.dataset.translate == "false") {
                 text.style.opacity = 0;
             }
-            Translate(text,parent,"top");
+            Translate(text,parent,"right");
         }
 
         window.addEventListener("scroll",onTranslateTop);
@@ -30,10 +30,10 @@ const TestimonialItem = ({content,translate}) => {
 
     },[]);
 
-    return <div className="testimonial-item">
+    return <div className="testimonial-item" ref={testimonialRef}>
         <img src={require('./../../images/'+content.picture)} alt={content.name} />
         <h4>{content.name}</h4>
-        <p ref={testimonialTextRef}>{content.content}</p>
+        <p>{content.content}</p>
     </div> 
 }
 

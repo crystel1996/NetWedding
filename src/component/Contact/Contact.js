@@ -77,8 +77,14 @@ const Contact = ({translate}) => {
 
     },[]);
 
-    const handleSubmit = (value) => {
+    const handleSubmit = (value,setData) => {
+        alert("Form submitted: See in console");
         console.log(value);
+        setData({
+            title:"",
+            email:"",
+            message:""
+        });
     }
 
     return <div className="contact-content">
