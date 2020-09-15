@@ -4,6 +4,8 @@ import React from 'react';
 import useResize from './../../hook/useResize';
 import { Link } from 'react-router-dom';
 
+import {ABSOLUTE_URL} from './../../data/data';
+
 const Menu = ({items,isCollapsed,collapse}) => {
     const width = useResize(window.innerWidth);
     let isCollapse = 'nav-collapse';
@@ -12,7 +14,7 @@ const Menu = ({items,isCollapsed,collapse}) => {
 
     items.forEach(element => {
         item.push(<li key={element.link}>
-            <Link to={element.link} onClick={collapse} >{element.text}</Link>
+            <Link to={ABSOLUTE_URL+element.link} onClick={collapse} >{element.text}</Link>
         </li>)
     });
 

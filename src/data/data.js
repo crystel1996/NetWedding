@@ -1,3 +1,5 @@
+const ABSOLUTE_URL = "/NetWedding";
+
 
 const MENU = [
     {
@@ -211,5 +213,6 @@ export {
     GALLERY,
     TESTIMONIAL,
     CONTACT,
-    SOCIAL_NETWORK
+    SOCIAL_NETWORK,
+    ABSOLUTE_URL
 };

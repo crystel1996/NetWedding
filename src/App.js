@@ -1,8 +1,9 @@
 /* eslint-disable */
 import React from 'react';
 
+import {ABSOLUTE_URL} from './data/data';
+
 import Navigation from './component/Header/Navigation';
-import CallToAction from './component/Action/Call-to-action';
 import About from './component/About/About';
 import Gallery from './component/Gallery/Gallery';
 import Testimonial from './component/Testimonial/Testimonial';
@@ -26,25 +27,25 @@ const App = () => {
         <Navigation />  
         
         <Switch>
-          <Route exact path="/">
+          <Route exact path={ABSOLUTE_URL}>
             <Home />
           </Route>
-          <Route path="/about">
+          <Route path={ABSOLUTE_URL+"/about"}>
             <Section title = "About" className="dark-bg">
               <About translate="true" />
             </Section>
           </Route>
-          <Route path="/gallery">
+          <Route path={ABSOLUTE_URL+"/gallery"}>
             <Section title = "Gallery" className="white-bg">
               <Gallery translate="true" />
             </Section>
           </Route>
-          <Route path="/testimonial">
+          <Route path={ABSOLUTE_URL+"/testimonial"}>
             <Section title = "Testimonial" className="theme-bg">
               <Testimonial translate="true" />
             </Section>
           </Route>
-          <Route path="/contact">
+          <Route path={ABSOLUTE_URL+"/contact"}>
             <Section title = "Contact" className="white-bg">
               <Contact translate="true" />
             </Section>
