@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "107cfa6994941c5cf8a89121fea9218e",
+    "revision": "68dec411d2e07230f6ad6f9a8c33f754",
     "url": "/NetWedding/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NetWedding/static/css/2.3936cf85.chunk.css"
   },
   {
-    "revision": "bffa770d3d7fa19b92c2",
+    "revision": "a74e77316b944f9a2c11",
     "url": "/NetWedding/static/css/main.4099fb35.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NetWedding/static/js/2.4116f8a6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bffa770d3d7fa19b92c2",
-    "url": "/NetWedding/static/js/main.18f840f2.chunk.js"
+    "revision": "a74e77316b944f9a2c11",
+    "url": "/NetWedding/static/js/main.45b5093c.chunk.js"
   },
   {
     "revision": "82d5365551a3691bf2d3",

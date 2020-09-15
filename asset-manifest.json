@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/NetWedding/static/css/main.4099fb35.chunk.css",
-    "main.js": "/NetWedding/static/js/main.18f840f2.chunk.js",
-    "main.js.map": "/NetWedding/static/js/main.18f840f2.chunk.js.map",
+    "main.js": "/NetWedding/static/js/main.45b5093c.chunk.js",
+    "main.js.map": "/NetWedding/static/js/main.45b5093c.chunk.js.map",
     "runtime-main.js": "/NetWedding/static/js/runtime-main.dcff0cc8.js",
     "runtime-main.js.map": "/NetWedding/static/js/runtime-main.dcff0cc8.js.map",
     "static/css/2.3936cf85.chunk.css": "/NetWedding/static/css/2.3936cf85.chunk.css",
     "static/js/2.4116f8a6.chunk.js": "/NetWedding/static/js/2.4116f8a6.chunk.js",
     "static/js/2.4116f8a6.chunk.js.map": "/NetWedding/static/js/2.4116f8a6.chunk.js.map",
     "index.html": "/NetWedding/index.html",
-    "precache-manifest.37d177490745344c9b4552a911ef730c.js": "/NetWedding/precache-manifest.37d177490745344c9b4552a911ef730c.js",
+    "precache-manifest.2c3a1ee69fb5d3c75779c7a75394dab0.js": "/NetWedding/precache-manifest.2c3a1ee69fb5d3c75779c7a75394dab0.js",
     "service-worker.js": "/NetWedding/service-worker.js",
     "static/css/2.3936cf85.chunk.css.map": "/NetWedding/static/css/2.3936cf85.chunk.css.map",
     "static/css/main.4099fb35.chunk.css.map": "/NetWedding/static/css/main.4099fb35.chunk.css.map",
@@ -36,6 +36,6 @@
     "static/css/2.3936cf85.chunk.css",
     "static/js/2.4116f8a6.chunk.js",
     "static/css/main.4099fb35.chunk.css",
-    "static/js/main.18f840f2.chunk.js"
+    "static/js/main.45b5093c.chunk.js"
   ]
 }
