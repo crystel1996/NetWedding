@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/NetWedding/static/css/main.4099fb35.chunk.css",
-    "main.js": "/NetWedding/static/js/main.45b5093c.chunk.js",
-    "main.js.map": "/NetWedding/static/js/main.45b5093c.chunk.js.map",
+    "main.css": "/NetWedding/static/css/main.ac99709c.chunk.css",
+    "main.js": "/NetWedding/static/js/main.0ab7f16c.chunk.js",
+    "main.js.map": "/NetWedding/static/js/main.0ab7f16c.chunk.js.map",
     "runtime-main.js": "/NetWedding/static/js/runtime-main.dcff0cc8.js",
     "runtime-main.js.map": "/NetWedding/static/js/runtime-main.dcff0cc8.js.map",
     "static/css/2.3936cf85.chunk.css": "/NetWedding/static/css/2.3936cf85.chunk.css",
-    "static/js/2.4116f8a6.chunk.js": "/NetWedding/static/js/2.4116f8a6.chunk.js",
-    "static/js/2.4116f8a6.chunk.js.map": "/NetWedding/static/js/2.4116f8a6.chunk.js.map",
+    "static/js/2.920860ff.chunk.js": "/NetWedding/static/js/2.920860ff.chunk.js",
+    "static/js/2.920860ff.chunk.js.map": "/NetWedding/static/js/2.920860ff.chunk.js.map",
     "index.html": "/NetWedding/index.html",
-    "precache-manifest.2c3a1ee69fb5d3c75779c7a75394dab0.js": "/NetWedding/precache-manifest.2c3a1ee69fb5d3c75779c7a75394dab0.js",
+    "precache-manifest.b1fc7f582eedfab539dda47fe6194ee1.js": "/NetWedding/precache-manifest.b1fc7f582eedfab539dda47fe6194ee1.js",
     "service-worker.js": "/NetWedding/service-worker.js",
     "static/css/2.3936cf85.chunk.css.map": "/NetWedding/static/css/2.3936cf85.chunk.css.map",
-    "static/css/main.4099fb35.chunk.css.map": "/NetWedding/static/css/main.4099fb35.chunk.css.map",
-    "static/js/2.4116f8a6.chunk.js.LICENSE.txt": "/NetWedding/static/js/2.4116f8a6.chunk.js.LICENSE.txt",
+    "static/css/main.ac99709c.chunk.css.map": "/NetWedding/static/css/main.ac99709c.chunk.css.map",
+    "static/js/2.920860ff.chunk.js.LICENSE.txt": "/NetWedding/static/js/2.920860ff.chunk.js.LICENSE.txt",
     "static/media/404.jpg": "/NetWedding/static/media/404.0814c022.jpg",
     "static/media/author-2.jpg": "/NetWedding/static/media/author-2.c7edddd7.jpg",
     "static/media/author.jpg": "/NetWedding/static/media/author.4d141acc.jpg",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.dcff0cc8.js",
     "static/css/2.3936cf85.chunk.css",
-    "static/js/2.4116f8a6.chunk.js",
-    "static/css/main.4099fb35.chunk.css",
-    "static/js/main.45b5093c.chunk.js"
+    "static/js/2.920860ff.chunk.js",
+    "static/css/main.ac99709c.chunk.css",
+    "static/js/main.0ab7f16c.chunk.js"
   ]
 }
