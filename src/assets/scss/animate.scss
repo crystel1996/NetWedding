@@ -10,6 +10,16 @@
 }
 
 
+@keyframes zoom {
+    from {transform:scale(0)}
+    to{transform:scale(1)}
+}
+
+@-webkit-keyframes  zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
 /*------------------------------------------------MAKE A TRANSFORM TRANSLATE EFFECT FROM THE DIRECTION WISHED ------------------------------- */
 @keyframes translate-left {
     from { transform: translate3d(300px,0,0)}

@@ -54,6 +54,10 @@ form{
     }
 }
 
+.hand{
+    cursor:pointer;
+}
+
 /*------------------------------------------------PROPERTY VALUE FOR SLIDESHOW IN CALL TO ACTION ---------------------------------------*/
 
 .slideshow-container{
@@ -128,6 +132,45 @@ form{
             &.active, &:hover{
                 background-color: $color-theme;
             }
+        }
+    }
+}
+
+/*------------------------------------------------MODAL----------------------------------------------------------------------------------*/
+.modal-image{
+    display:none;
+    position:fixed;
+    z-index:3;
+    padding-top:50px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.9);
+    & .modal-content{
+        margin:auto;
+        display:block;
+        width:80%;
+        max-width:700px;
+        max-height:80vh;
+        object-fit: contain;
+        animation-name:zoom;
+        animation-duration:0.6s;
+    }
+    & .close{
+        position:absolute;
+        top:15px;
+        right:35px;
+        color:#F1F1F1;
+        font-size:40px;
+        font-weight:bold;
+        transition:0.3s;
+        &:hover,&:focus{
+            color:#bbb;
+            text-decoration: none;
+            cursor:pointer;
         }
     }
 }

@@ -116,4 +116,9 @@
             }
         }
     }
+    .modal-image{
+        & .modal-content{
+            width:100%;
+        }
+    }
 }

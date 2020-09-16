@@ -4,14 +4,18 @@ import React, { useLayoutEffect, useRef } from 'react';
 
 import {GALLERY} from './../../data/data';
 import { Translate } from '../../Function/Translate';
+import useModal from '../../hook/useModal';
+import ModalImage from '../Modal/Image';
 
 const GalleryItem = ({content,translate}) => {
     const galleryPictureRef = useRef(null);
 
+    const [isModal,setModal] = useModal(false);
+
     useLayoutEffect(() => {
         let picture = galleryPictureRef.current;
         picture.dataset.translate = translate;
-        
+
         const onTranslateTop = () => {
             if(picture.dataset.translate == "false") {
                 picture.style.opacity = 0;
@@ -19,15 +23,19 @@ const GalleryItem = ({content,translate}) => {
 
             Translate(picture,picture,'top');
         }
+
         window.addEventListener("scroll",onTranslateTop);
 
         return () => {
             window.removeEventListener("scroll",onTranslateTop);
         }
         
-    },[]);
+    },[]); 
 
-    return <img alt={content.alt} className="" src={require("./../../images/"+content.src)} ref={galleryPictureRef} />
+    return <React.Fragment> 
+        <img alt={content.alt} className="hand " src={require("./../../images/"+content.src)} ref={galleryPictureRef} onClick={setModal} />
+        {isModal && <ModalImage content={require("./../../images/"+content.src)} isDisplay={isModal} handleDisplay={setModal} />}
+    </React.Fragment>
 };
 
 
